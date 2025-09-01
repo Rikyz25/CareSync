@@ -11,7 +11,7 @@ HUGGINGFACE_REPO_ID="mistralai/Mistral-7B-Instruct-v0.3"
 def load_llm():
     return ChatOpenAI(
         openai_api_base="https://openrouter.ai/api/v1",
-        openai_api_key="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",
+        openai_api_key="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",
         model="mistralai/mistral-7b-instruct",  
         temperature=0.5
     )
