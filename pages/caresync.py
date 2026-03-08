@@ -125,7 +125,7 @@ def main():
                 st.success("You have been logged out.")
                 st.rerun()
 
-    # ------------------- HEADER -------------------
+    # ------------------- HEADER ------------------
     if "full_name" in st.session_state and st.session_state["full_name"]:
         st.markdown(
             f"<h2 style='text-align:center;'>🩺 CareSync — Hello, {st.session_state['full_name']}!</h2>",
@@ -213,14 +213,14 @@ def main():
             st.session_state.location_latlon = None
             st.session_state.location_label = None
 
-        # Controls
+        
         col1, col2 = st.columns([2, 1])
         with col1:
             use_ip = st.button("Use My Current Location (IP)")
         with col2:
             radius_km = st.slider("Search radius (km)", 1, 10, 3)
 
-        # Manual location input
+        
         location_input = st.text_input("Or enter your location (e.g., 'Kolkata, India'):")
 
         # Detect via IP
